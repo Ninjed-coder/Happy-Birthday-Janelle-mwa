@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="design.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Janelle</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="overlay"></div>
+      <div>
+        <section id="happy">
+          <h1>Happy Birthday Janelle!!!</h1>
+          <img src="IMG/wife1.jpg " class="img-fluid" id="wife" />
+        </section>
+        <section id="message">
+          <p>Click anywhere for song love</p>
+        </section>
+        <div class="pink-btn-wrapper">
+          <a href="card.html" target="_self" class="btn btn-success pink-btn"> I love you: Message </a>
+        </div>
+      </div>
+    </div>
+    <audio id="birthday-audio" loop>
+      <source src="audio/bday.mp3" type="audio/mp3" />
+    </audio>
+
+    <script>
+      window.addEventListener(
+        "click",
+        function () {
+          const audio = document.getElementById("birthday-audio");
+          audio.play();
+        },
+        { once: true }
+      );
+    </script>
+  </body>
+</html>
