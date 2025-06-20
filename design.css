@@ -1,0 +1,97 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: #2e2e2e;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25cm;
+  font-style: italic;
+}
+
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("IMG/heart1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("IMG/confetti.gif");
+  background-repeat: repeat;
+  background-size: contain;
+  pointer-events: none;
+  animation: floatFlowers 10s linear infinite;
+}
+@keyframes floatFlowers {
+  0% {
+    background-position: 0 -100%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+#happy {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#wife {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+#message {
+  display: flex;
+  justify-content: center;
+}
+
+.pink-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.pink-btn {
+  background-color: #ff69b4;
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border: 3px solid #ff1493;
+  border-radius: 8px;
+  box-shadow: 0 0 0 3px #ffb6c1;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.pink-btn:hover {
+  background-color: #ff1493;
+  box-shadow: 0 0 10px 3px #ffc0cb;
+  transform: scale(1.05);
+}
