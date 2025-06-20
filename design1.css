@@ -543,5 +543,15 @@ p {
 .card.open {
   transform: rotateY(180deg);
 }
+.card-inner {
+  transform-origin: center;
+}
 
+.birthdayCard:hover .card-inner {
+  transform: none; 
+}
+
+.birthdayCard.flipped .card-inner {
+  transform: rotateY(180deg);
+}
 
